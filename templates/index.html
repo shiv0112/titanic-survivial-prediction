@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Titanic ML API</title>
+<link rel="Stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+
+{% block body %}
+<header><h2 style="text-align: center">Survival Prediction on Titanic Dataset</h2></header>
+
+<form id="form" class="topBefore" action="/predict" method="POST">
+  <input type="number" step="0.0001" name="age" placeholder="Age">
+  <input type="number" step="0.0001" name="sibsp" placeholder="No. of Siblings/Spouse aboard on the ship">
+  <input type="number" step="0.0001" name="parch" placeholder="No. of Parents/Childrenon aboard on the ship">
+  <input type="number" step="0.0001" name="fare" placeholder="Passenger Fare">
+  
+  <input list="p" name="pclass" placeholder="Passsenger Class">
+  <datalist id="p">
+    <option value="1">Class 1</option>
+    <option value="2">Class 2</option>
+    <option value="3">Class 3</option>
+  </datalist>
+
+  <input list="m" name="sex" placeholder="Gender">
+  <datalist id="m">
+    <option value="1">Female</option>
+    <option value="2">Male</option>
+  </datalist>
+
+  <input id="submit" type="submit" value="Predict">
+</form>
+{% endblock %}
