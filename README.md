@@ -5,8 +5,6 @@ Project Description 📄
 ❄️ Built a decision tree model for the famous Titanic dataset to
 predict whether a passenger will survive the shipwreck or not.
 
-#### Deployed Project Link: https://predict-titanic-survival-api.herokuapp.com/
-
 ##### Jupyter Notebook: (https://github.com/shiv0112/titanic-survivial-prediction/blob/master/notebooks/titanic-decision-tree.ipynb)
 
 ## Data:
